@@ -11,8 +11,7 @@ function solution(number){
     var numbers2 = number.toString();
     var numbers= reverse(numbers2);
     function numb(numbe,one,four,five,six,seven,eigth, nine){
-        console.log(numbe,one,four,five,six,seven,eigth, nine);
-        console.log(numbe);
+
             switch(numbe){
                 case 0:
                   break;
@@ -21,14 +20,12 @@ function solution(number){
                 case 2:
                     result+=one;
                 case 1:
-                console.log("trow here");
                     result+=one;
                     break;
                 case 4:
                     result+=four;
                     break;
                 case 5:
-                console.log("trow here");
                     result+=five;
                     break;
                 case 6:
@@ -46,16 +43,8 @@ function solution(number){
                 default:
                 break;
             }
-            console.log(" .  " + result);
+
         }
-
-//for (var i = numbers.length-1; i >= 0; i--) {
-  
-  //  console.log("i i" +i +"number "+ numbers[i]);
-  //falta meter aqui os numeros nos locais corretos em baixo
-    console.log(numbers[0]);
-    console.log(numbers[1]);
-
     switch(numbers.length){
         case 4:
             numb(parseInt(numbers[3]),"M","MV","V","VM","VMM","VMMM","Mx");
@@ -71,5 +60,6 @@ function solution(number){
 console.log(result);
 return result;
 }
-solution(15);
+
+solution(1997);
 
